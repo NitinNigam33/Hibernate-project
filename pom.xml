@@ -97,5 +97,6 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>3.4.0.GA</version>
 		</dependency>
+
 	</dependencies>
 </project>

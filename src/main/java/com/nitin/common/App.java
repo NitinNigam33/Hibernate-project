@@ -3,20 +3,23 @@ package com.nitin.common;
 import org.hibernate.Session;
 import com.nitin.persistence.HibernateUtil;
 
-public class App
-{
-    public static void main( String[] args )
-    {
-        System.out.println("Maven + Hibernate + MySQL");
-        Session session = HibernateUtil.getSessionFactory().openSession();
+public class App {
+	public static void main(String[] args) {
+		System.out.println("Maven + Hibernate + MySQL");
+		Session session = HibernateUtil.getSessionFactory().openSession();
 
-        session.beginTransaction();
-        Stock stock = new Stock();
+		session.beginTransaction();
+		Stock stock = new Stock();
 
-        stock.setStockCode("4715");
-        stock.setStockName("GENM");
+		stock.setStockCode("4715");
+		stock.setStockName("GENM");
 
-        session.save(stock);
-        session.getTransaction().commit();
-    }
+		session.save(stock);
+		session.getTransaction().commit();
+
+		// System.out.println("lombok use to Getter and Setter");
+		// LombokGetterAndSetterUse obj = new LombokGetterAndSetterUse(1,
+		// "nitin");
+		// System.out.println(obj.getStrList());
+	}
 }

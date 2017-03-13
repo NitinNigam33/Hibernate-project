@@ -2,6 +2,7 @@ package com.nitin.common;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "EMPLOYEE")
 public class Employee {

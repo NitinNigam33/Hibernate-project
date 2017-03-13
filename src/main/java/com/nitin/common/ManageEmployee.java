@@ -41,6 +41,7 @@ public class ManageEmployee {
       /* List down new list of the employees */
       ME.listEmployees();
    }
+   
    /* Method to CREATE an employee in the database */
    public Integer addEmployee(String fname, String lname, int salary){
       Session session = factory.openSession();
